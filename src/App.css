@@ -1,0 +1,63 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: black;
+}
+
+.menu {
+  width: 15vw;
+  height: 8vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  font-size: 2.2rem;
+  font-family: "Arial Black", Arial, sans-serif;
+  border-radius: 50%;
+  border: 10px solid white;
+  text-transform: uppercase;
+  transition: width 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.menu span:hover {
+  color: #00ff00;
+}
+
+.left,
+.right {
+  color: white;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.left.show,
+.right.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu.exiting {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+}
+
+.menu.expanded {
+  width: 25vw;
+  gap: 5vw;
+}
