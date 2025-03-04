@@ -20,7 +20,7 @@ const Menu = () => {
   const handleToggleMenu = (event) => {
     event.stopPropagation();
     if (isExpanded) {
-      navigate("/");
+      navigate("/portfolio");
       setIsExpanded(false);
     } else {
       setIsExpanded(true);
@@ -46,14 +46,14 @@ const Menu = () => {
 
   return (
     <div
-      className={`menu ${isExpanded ? "expanded" : ""} ${isExiting ? "exiting" : ""}`}
+    className={`menu ${isExpanded ? "expanded" : ""} ${isExiting ? "exiting" : ""}`}
       style={tiltStyle}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <span className="left" onClick={() => handleNavigation("/dev")}>DEV</span>
+      <span className="left" onClick={() => handleNavigation("/portfolio/dev")}>DEV</span>
       <span className="center" onClick={handleToggleMenu}>GSTV</span>
-      <span className="right" onClick={() => handleNavigation("/store")}>ART</span>
+      <span className="right" onClick={() => handleNavigation("/portfolio/store")}>ART</span>
     </div>
   );
 };
