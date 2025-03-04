@@ -1,56 +1,52 @@
-
-html, body {
-    overflow: hidden;
+html,
+body {
+  overflow: hidden;
 }
 
 .project-dev-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-  }
-  
-  .project-dev-icon-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
-  }
-  
-  
-  .project-horizontal-scroll {
-    box-sizing: content-box;
-    display: flex;
-    align-items: center;
-    overflow-x: auto;
-    width: 100%;
-    height: 80vh;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    scrollbar-color: transparent;
-    background-color: yellow;
-  }
-  
-  .project-horizontal-scroll::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem no Chrome e Safari */
-    height: 8px;
-  }
-  
-  .project-horizontal-scroll::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  .project-horizontal-scroll::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-  }
-  
-  
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.project-dev-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: red; */
+}
+
+
+.project-horizontal-scroll {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+  height: 80vh;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+}
+
+.project-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+  /* Oculta a barra de rolagem no Chrome e Safari */
+  height: 8px;
+}
+
+.project-horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}

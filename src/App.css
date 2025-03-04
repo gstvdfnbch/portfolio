@@ -9,6 +9,19 @@
   background-color: black;
 }
 
+
+
+@font-face {
+  font-family: "Arial Black";
+  src: url("/assets/fonts/Arial Rounded Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Arial Black", Arial, sans-serif;
+}
+
 .menu {
   width: 15vw;
   height: 8vh;
@@ -24,8 +37,6 @@
   text-transform: uppercase;
   transition: width 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
-  /* padding-left: 2vw;
-  padding-right: 2vw; */
 }
 
 .menu span:hover {
@@ -43,12 +54,6 @@
   opacity: 0;
   visibility: hidden;
 }
-/* 
-.left.show,
-.right.show{
-  opacity: 1;
-  visibility: visible;
-} */
 
 .menu.exiting {
   opacity: 0;
@@ -63,6 +68,7 @@
 
 .menu .center {
   font-size: 2.0rem;
+  font-weight: bolder;
 }
 
 .menu span {
@@ -89,8 +95,7 @@
 .menu .right {
   color: white;
   font-size: 1rem;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   font-style: italic;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   opacity: 0;
@@ -104,6 +109,7 @@
   }
 
   .menu .center {
+    font-weight: bold;
     font-size: 2.0rem;
   }
   .menu.expanded {

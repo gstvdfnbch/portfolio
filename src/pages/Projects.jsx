@@ -130,11 +130,12 @@ const Projects = () => {
   // ];
 
   return (
-    <div className="project-dev-page">
-      <div className="project-dev-icon-container">
+    <div className="dev-page">
+      <div className="dev-icon-container">
         <MenuTopo showMenuRight={true} />
-       <div className="project-horizontal-scroll">
-         {/* {projectsData.map((project) => (
+
+       {/* <div className="horizontal-scroll">
+         {projectsData.map((project) => (
             <CardCell 
               key={project.id} 
               texto1={project.texto1} 
@@ -143,8 +144,8 @@ const Projects = () => {
               iconSrc={project.icon}
               onClick={() => handleCardClick(project.id)}
             />
-          ))}  */}
-         </div>
+          ))}
+         </div> */}
       </div>
     </div>
   );
