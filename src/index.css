@@ -66,3 +66,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+@font-face {
+  font-family: "Arial Black";
+  src: url("/assets/fonts/ArialBlack.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Arial Black", Arial, sans-serif;
+}

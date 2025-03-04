@@ -1,0 +1,126 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 60vh;
+    padding: 30px;
+    /* background-color: aqua; */
+}
+
+.card.zero {
+    width: 0vw;
+    height: 1vh;
+    margin: 0px;
+    background: transparent;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.image-article {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.box-title {
+    width: 30vw;
+    height: auto;
+    border-radius: 15px;
+    background-color: #333;
+}
+
+.box-title.zero {
+    height: 0px;    
+    background-color: transparent;
+}
+
+.title-article {
+    width: 30vw;
+    height: auto;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word; 
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.descrip-article{
+    width: 30vw;
+    height: auto;
+    text-align: left;
+    font-size: 1.0rem;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word; 
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 70vw;
+        height: 37vh;
+        padding: 10px;
+    }
+
+    .card.zero {
+        width: 5vw;
+        height: 0vh;
+        margin: 0px;
+        background: transparent;
+    }
+
+    .cover {
+        width: 65vw;
+        height: auto;
+        padding-bottom: 0px;
+    }
+
+    .image-article {
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .box-title {
+        width: 100%;
+        height: 25vh;
+        border-radius: 10px;
+        background-color: #333;
+    }
+    
+    .box-title.zero {
+        height: 0px;    
+        background-color: transparent;
+    }
+    
+    .title-article {
+        width: 100%;
+        height: auto;
+        text-align: left;
+        font-size: 1.0rem;
+        font-weight: bold;
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word; 
+        padding-bottom: 10px;
+    }
+    
+    .descrip-article{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        font-size: 0.8rem;
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word; 
+    }
+    
+
+}
