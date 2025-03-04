@@ -1,0 +1,35 @@
+
+.dev-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: greenyellow; */
+}
+
+.coming-soon-banner {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: black;
+    padding: 20px 0;
+  }
+
+@media (max-width: 768px) {
+  
+    .coming-soon-banner {
+        font-size: 2rem;
+
+    }
+
+}
