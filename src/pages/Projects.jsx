@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../pages/Projects.module.css";
 import MenuTopo from "../components/MenuTopo/MenuTopo.jsx";
 import CardCell from "../components/CardCell/CardCell";
-import projectsData from "../data/dataProject.js"; // Importando os dados
+// import projectsData from "../data/dataProject.jsx";
 
 const Projects = () => {
   const scrollContainerRef = useRef(null);
@@ -25,9 +25,11 @@ const Projects = () => {
 
   const handleCardClick = (id) => {
     if ((id != 0) && (id != projectsData.length - 1)) {
-      navigate(`/project/${id}`);
+      navigate(`/portfolio/project/${id}`);
     }
   };
+
+  const projects = getProjectsData();
 
   return (
     <div className="dev-page">
@@ -35,7 +37,7 @@ const Projects = () => {
         <MenuTopo showMenuRight={true} />
 
         <div className="horizontal-scroll" ref={scrollContainerRef}>
-          {projectsData.map((project) => (
+          {projects.map((project) => (
             <CardCell 
               key={project.id} 
               texto1={project.texto1} 
