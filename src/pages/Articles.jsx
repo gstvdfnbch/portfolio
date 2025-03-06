@@ -1,32 +1,32 @@
-// import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Articles.modules.css";
-import MenuTopo from "../components/MenuTopo/MenuTopo.jsx";
-// import dataArticle from "../data/dataArticle.jsx"; // Importando os dados
-// import CardArticle from "../components/CardArticle/CardArticle.jsx";
+import MenuTopo from "../components/MenuTopo/MenuTopo";
+import CardArticle from "../components/CardArticle/CardArticle.jsx";
+import dataArticle from "../data/dataArticle.js";
+
 
 const Articles = () => {
-  // const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef(null);
 
-  // useEffect(() => {
-  //   const scrollContainer = scrollContainerRef.current;
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
 
-  //   if (scrollContainer) {
-  //     const handleWheel = (event) => {
-  //       event.preventDefault();
-  //       scrollContainer.scrollLeft += event.deltaY;
-  //     };
+    if (scrollContainer) {
+      const handleWheel = (event) => {
+        event.preventDefault();
+        scrollContainer.scrollLeft += event.deltaY;
+      };
 
-  //     scrollContainer.addEventListener("wheel", handleWheel);
-  //     return () => scrollContainer.removeEventListener("wheel", handleWheel);
-  //   }
-  // }, []);
+      scrollContainer.addEventListener("wheel", handleWheel);
+      return () => scrollContainer.removeEventListener("wheel", handleWheel);
+    }
+  }, []);
 
   return (
     <div className="dev-page">
       <div className="dev-icon-container">
         <MenuTopo showMenuRight={true} />
-
-        {/* <div className="horizontal-scroll" ref={scrollContainerRef}>
+          <div className="horizontal-scroll" ref={scrollContainerRef}>
           {dataArticle.map((project) => (
             <CardArticle 
               key={project.id} 
@@ -36,7 +36,7 @@ const Articles = () => {
               link={project.link}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

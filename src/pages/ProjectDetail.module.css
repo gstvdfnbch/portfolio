@@ -1,0 +1,347 @@
+.dev-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 1vw;
+    background-color: #333;
+    padding: 15px;
+}
+
+.background.vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    height: auto;
+}
+
+.box-top-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.top {
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.top.vertical {
+    width: 40vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.box-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+}
+
+.size-icon {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: auto;
+    height: 100%;
+    padding: 15px;
+}
+
+.title {
+    width: auto;
+    height: 40%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    width: auto;
+    height: 30%;
+}
+
+.box-badgets {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+    height: 30%;
+}
+
+.size-badget {
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 0.5vw;
+}
+
+.size-badget.hidden {
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    margin-right: 0.5vw;
+}
+
+.description {
+    width: 60vw;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    padding: 15px;
+}
+
+.description.vertical {
+    width: 40vw;
+    height: auto;
+    text-align: left;
+    align-items: center;
+}
+
+.images {
+    width: 60vw;
+    height: 40vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/* Remove o fundo da scrollbar */
+.images::-webkit-scrollbar {
+    height: 8px; /* Define a altura da scrollbar */
+    background: transparent; /* Remove o fundo */
+}
+
+/* Transforma o indicador da scrollbar em um círculo */
+.images::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 50%;
+    width: 20px;
+    height: 8px;
+}
+
+/* Esconde a área de rolagem de fundo */
+.images::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.images.vertical {
+    width: 20vw;
+    height: 60vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.images.hidden {
+    width: 0px;
+    height: 0px;
+}
+
+.images.only {
+    width: auto;
+    height: 60vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.size-images {
+    width: auto;
+    height: 37vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.size-images.vertical {
+    width: auto;
+    height: 57vh;
+    object-fit: contain;
+}
+
+.size-images.only {
+    width: auto;
+    height: 60vh;
+    object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+    .general-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 80vh;
+        margin-bottom: 15vh;
+    }
+
+    .background {
+        width: 85vw;
+        border-radius: 1vw;
+        background-color: #333;
+        padding: 15px;
+    }
+    
+    .background.vertical {
+        width: 85vw;
+        flex-direction: column;
+    }
+
+    .top {
+        width: 85vw;
+        height: 12vh;
+    }
+    
+    .top.vertical {
+        width: 85vw;
+        height: 12vh;
+    }
+
+    .title {
+        width: 100%;
+        height: 35%;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+    
+    .subtitle {
+        height: 35%;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .box-badgets {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        width: 50%;
+        height: 25%;
+    }
+
+    .size-badget{
+        width: auto;
+        height: 100%;
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+
+
+    .description {
+        width: 85vw;
+        font-size: 0.8rem;
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .description.vertical {
+        width: 85vw;
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .images {
+        width: 85vw;
+        height: 20vh;
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .images.vertical {
+        width: 85vw;
+        height: 20vh;
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .images.hidden {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .images.only {
+        width: auto;
+        height: 20vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .size-images {
+        width: auto;
+        height: 18vh;
+        object-fit: contain;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .size-images.vertical {
+        width: auto;
+        height: 18vh;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .size-images.only {
+        width: auto;
+        height: 20vh;
+        object-fit: contain;
+    }
+}

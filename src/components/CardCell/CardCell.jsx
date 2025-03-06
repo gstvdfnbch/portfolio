@@ -7,12 +7,10 @@ const CardCell = ({ texto1, texto2, imageSrc, iconSrc, onClick }) => {
 
   return (
     <div className="project-card" onClick={onClick} >
-      {/* Imagem principal do card */}
       <div className={cardTitleClass}>
         <img src={imageSrc} alt="Imagem do projeto" className="card-image" />
       </div>
       
-      {/* Novo quadrado abaixo */}
       <div className={textContainerClass}>
         <div className="square-icon">
           <img src={iconSrc} alt="Ícone" className="icon-image" />
@@ -21,7 +19,7 @@ const CardCell = ({ texto1, texto2, imageSrc, iconSrc, onClick }) => {
           <span className="text-line1">{texto1}</span>
           <span className="text-line2">{texto2}</span>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

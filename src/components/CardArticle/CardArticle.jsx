@@ -1,9 +1,11 @@
 import React from "react";
-import "./CardArticle.css"; // Importa os estilos
+import "./CardArticle.modules.css";
 
 const CardArticle = ({ titulo, text, imageSrc, link }) => {
   const card = titulo === "" ? "card zero" : "card";
-  const boxTitle = titulo === "" ? "box-title zero" : "box-title";
+  const boxTitle = titulo === "" ? "box-content zero" : "box-content";
+
+  console.log(titulo,text,imageSrc,link)
 
   return (
         <div>

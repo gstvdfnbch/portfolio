@@ -9,11 +9,9 @@
   background-color: black;
 }
 
-
-
 @font-face {
   font-family: "Arial Black";
-  src: url("/assets/fonts/Arial Rounded Bold.ttf") format("truetype");
+  /* src: url("/assets/fonts/ArialBlack.ttf") format("truetype"); */
   font-weight: bold;
   font-style: normal;
 }

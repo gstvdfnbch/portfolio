@@ -1,8 +1,3 @@
-
-html, body {
-    overflow: hidden;
-}
-
 .dev-page {
     display: flex;
     flex-direction: column;
@@ -19,9 +14,7 @@ html, body {
     align-items: start;
     width: 100vw;
     height: 100vh;
-    /* background-color: peru; */
 }
-
 
 .horizontal-scroll {
     display: flex;
@@ -33,7 +26,6 @@ html, body {
     scroll-behavior: smooth;
     scrollbar-width: none;
     scrollbar-color: transparent;
-    /* background-color: blue; */
 }
 
 .horizontal-scroll::-webkit-scrollbar {
