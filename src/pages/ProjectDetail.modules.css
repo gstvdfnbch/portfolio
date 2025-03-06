@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 .dev-icon-container {
     display: flex;
     flex-direction: column;
@@ -97,6 +101,7 @@
 }
 
 .subtitle {
+    font-family: "Arial";
     width: auto;
     height: 30%;
 }
@@ -126,15 +131,16 @@
 
 .description {
     width: 60vw;
-    height: auto;
+    font-family: "Arial";
     text-align: left;
     align-items: center;
     padding: 15px;
+    background-color: pink;
 }
 
 .description.vertical {
     width: 40vw;
-    height: auto;
+    height: 100%;
     text-align: left;
     align-items: center;
 }

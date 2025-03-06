@@ -1,4 +1,8 @@
-.dev-page {
+html, body {
+  overflow: hidden;
+}
+
+.dev-page-products {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -7,7 +11,7 @@
   height: 100vh;
 }
 
-.dev-icon-container {
+.dev-icon-container-products {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -16,7 +20,7 @@
   height: 100vh;
 }
 
-.horizontal-scroll {
+.horizontal-scroll-products {
   display: flex;
   align-items: center;
   overflow-x: auto;
@@ -28,16 +32,26 @@
   scrollbar-color: transparent;
 }
 
-.horizontal-scroll::-webkit-scrollbar {
-  display: none;
+.horizontal-scroll-products::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem no Chrome e Safari */
   height: 8px;
 }
 
-.horizontal-scroll::-webkit-scrollbar-track {
+.horizontal-scroll-products::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.horizontal-scroll::-webkit-scrollbar-thumb {
+.horizontal-scroll-products::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+  
+  .horizontal-scroll-products {
+    padding-top: 5vh;
+      height: auto;
+  }
+
 }

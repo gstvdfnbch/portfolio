@@ -22,6 +22,8 @@
 
 .image-article {
     width: 100%;
+    height: 100%;
+    object-fit: cover; 
     border-radius: 15px;
 }
 
@@ -29,7 +31,6 @@
     height: 100%;
     border-radius: 15px;
     background-color: #333;
-    box-sizing: border-box;
 }
 
 .box-content.zero {
@@ -44,27 +45,38 @@
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word; 
-    padding: 12px;
-    padding-bottom: 10px;
     text-decoration: none;
+    padding: 10px;
+
 }
 
 .descrip-article{
     text-align: left;    
-    font-family: Arial;
+    font-family: "Arial";
     font-size: 0.8rem;
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word; 
     text-decoration: none;
-    padding: 12px;
-
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
         width: 70vw;
-        height: 37vh;
+        height: 60vh;
         padding: 10px;
     }
 
@@ -76,19 +88,14 @@
     }
 
     .cover {
-        width: 65vw;
+        width: 100%;
         height: auto;
         padding-bottom: 0px;
     }
-
-    .image-article {
-        width: 100%;
-        border-radius: 15px;
-    }
     
     .box-content {
-        width: 100%;
-        height: 25vh;
+        width: auto;
+        height: 30vh;
         border-radius: 10px;
         background-color: #333;
     }
@@ -99,26 +106,27 @@
     }
     
     .title-article {
-        width: 100%;
+        width: 90%;
         height: auto;
         text-align: left;
-        font-size: 1.0rem;
+        font-size: 0.9rem;
         font-weight: bold;
         word-wrap: break-word;
         white-space: normal;
         overflow-wrap: break-word; 
-        padding-bottom: 10px;
+        padding: 10px;
     }
     
     .descrip-article{
-        width: 100%;
+        width: 80%;
         height: auto;
         text-align: left;
         font-size: 0.8rem;
         word-wrap: break-word;
         white-space: normal;
         overflow-wrap: break-word; 
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
     }
-    
-
 }

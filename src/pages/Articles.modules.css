@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 .dev-page {
     display: flex;
     flex-direction: column;
@@ -41,3 +45,13 @@
     background: #888;
     border-radius: 4px;
 }
+
+
+@media (max-width: 768px) {
+  
+    .horizontal-scroll {
+      padding-top: 5vh;
+        height: auto;
+    }
+  
+  }

@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 .dev-page {
     display: flex;
     flex-direction: column;

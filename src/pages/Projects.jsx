@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./Projects.module.css";
+import "./Projects.modules.css";
 import MenuTopo from "../components/MenuTopo/MenuTopo";
 import CardCell from "../components/CardCell/CardCell";
 import projectsData from "../data/dataProject";
@@ -30,10 +30,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="dev-page">
-      <div className="dev-icon-container">
+    <div className="dev-page-products">
+      <div className="dev-icon-container-products">
         <MenuTopo showMenuRight={true} />
-       <div className="horizontal-scroll">
+       <div className="horizontal-scroll-products">
          {projectsData.map((project) => (
             <CardCell 
               key={project.id} 

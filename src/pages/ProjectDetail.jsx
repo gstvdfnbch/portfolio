@@ -1,4 +1,4 @@
-import "./ProjectDetail.module.css";
+import "./ProjectDetail.modules.css";
 import MenuTopo from "../components/MenuTopo/MenuTopo";
 import React from 'react';
 import { useParams } from 'react-router-dom';
