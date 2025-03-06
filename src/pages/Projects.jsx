@@ -24,7 +24,7 @@ const Projects = () => {
   }, []);
 
   const handleCardClick = (id) => {
-    if ((id != 0) && (id != projectsData.length - 1)) {
+    if ((id != 0) && (id != projectsData.length)) {
       navigate(`/portfolio/project/${id}`);
     }
   };
@@ -33,18 +33,20 @@ const Projects = () => {
     <div className="dev-page-products">
       <div className="dev-icon-container-products">
         <MenuTopo showMenuRight={true} />
-       <div className="horizontal-scroll-products">
-         {projectsData.map((project) => (
-            <CardCell 
-              key={project.id} 
-              texto1={project.texto1} 
-              texto2={project.texto2} 
-              imageSrc={project.imageSrc}
-              iconSrc={project.icon}
-              onClick={() => handleCardClick(project.id)}
-            />
-          ))}
-         </div> 
+        <div className="box-content-projects">
+          <div className="horizontal-scroll-products" ref={scrollContainerRef}>
+            {projectsData.map((project) => (
+              <CardCell
+                key={project.id}
+                texto1={project.texto1}
+                texto2={project.texto2}
+                imageSrc={project.imageSrc}
+                iconSrc={project.icon}
+                onClick={() => handleCardClick(project.id)}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

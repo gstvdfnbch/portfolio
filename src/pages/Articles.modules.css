@@ -20,38 +20,50 @@ html, body {
     height: 100vh;
 }
 
-.horizontal-scroll {
+
+.box-content-articles {
     display: flex;
     align-items: center;
     overflow-x: auto;
     width: 100vw;
-    height: 100vh;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    scrollbar-color: transparent;
+    height: 90vh;
 }
+  
+
+.horizontal-scroll {
+    display: flex;
+    align-items: start;
+    overflow-x: auto;
+    width: 100vw;
+    height: auto;
+}
+
 
 .horizontal-scroll::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem no Chrome e Safari */
     height: 8px;
-}
-
-.horizontal-scroll::-webkit-scrollbar-track {
     background: transparent;
-}
-
-.horizontal-scroll::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 50%;
+  }
 
 @media (max-width: 768px) {
-  
+    .box-content-articles {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        width: 100vw;
+        height: 60vh;
+    }
+
     .horizontal-scroll {
-      padding-top: 5vh;
         height: auto;
     }
   
-  }
+}

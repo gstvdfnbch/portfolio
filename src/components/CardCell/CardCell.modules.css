@@ -98,6 +98,20 @@
 
 @media (max-width: 768px) {
 
+    .project-card {
+        width: 90vw;
+        height: auto; /* Altura baseada na proporção 9:16 */
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px;
+        gap: 12px;
+    }
+
     .card-title {
         width: 200px;
         height: 60vh;
@@ -109,7 +123,18 @@
     }
 
     .card-title.small {
-        width: 20px;
+        width: 10px;
         height: 20px; /* Altura baseada na proporção 9:16 */
+    }
+
+    .card-footer {
+        width: auto;
+        /* max-width: 200px; */
+        height: 10vh;
+        max-height: 20%;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
     }
 }

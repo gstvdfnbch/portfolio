@@ -20,21 +20,26 @@ html, body {
   height: 100vh;
 }
 
+.box-content-projects {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  width: 100vw;
+  height: 90vh;
+}
+
 .horizontal-scroll-products {
   display: flex;
   align-items: center;
   overflow-x: auto;
   width: 100vw;
-  height: 100vh;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  scrollbar-color: transparent;
+  height: auto;
 }
 
+
 .horizontal-scroll-products::-webkit-scrollbar {
-  display: none; /* Oculta a barra de rolagem no Chrome e Safari */
   height: 8px;
+  background: transparent; /* Remove o fundo */
 }
 
 .horizontal-scroll-products::-webkit-scrollbar-track {
@@ -42,15 +47,22 @@ html, body {
 }
 
 .horizontal-scroll-products::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  background-color: #888;
+  border-radius: 50%;
 }
 
 
 @media (max-width: 768px) {
   
+  .box-content-projects {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    width: 100vw;
+    height: 60vh;
+  }
+
   .horizontal-scroll-products {
-    padding-top: 5vh;
       height: auto;
   }
 

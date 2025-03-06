@@ -24,8 +24,9 @@ const Articles = () => {
 
   return (
     <div className="dev-page">
-      <div className="dev-icon-container">
+      <div className="dev-icon-container-articles">
         <MenuTopo showMenuRight={true} />
+        <div className="box-content-articles">
           <div className="horizontal-scroll" ref={scrollContainerRef}>
           {dataArticle.map((project) => (
             <CardArticle 
@@ -37,6 +38,7 @@ const Articles = () => {
             />
           ))}
         </div>
+      </div>
       </div>
     </div>
   );

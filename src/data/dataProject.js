@@ -32,14 +32,14 @@ import animalCover from "../assets/covers/animal-cover.png";
 import animalIcon from "../assets/icons/animal.png";
 
 const projectsData = [
-  {
-    id: 0,
-    title: "",
-    texto1: "",
-    texto2: "",
-    imageSrc: blackCover,
-    icon: blackIcon
-  },
+  // {
+  //   id: 0,
+  //   title: "",
+  //   texto1: "",
+  //   texto2: "",
+  //   imageSrc: blackCover,
+  //   icon: blackIcon
+  // },
   {
     id: 1,
     title: "Encarte Rápido",
