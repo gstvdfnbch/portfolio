@@ -29,8 +29,8 @@ const MenuTopo = ({ showMenuRight = true }) => {
       {showMenuRight ? (
         <div className="menu-right">
           <div className="menu-topicos">
-            <Link to="/portfolio/projects" className="menu-link">Projects</Link>|
-            <Link to="/portfolio/articles" className="menu-link">Articles</Link>
+            <Link to="/portfolio/projects" className="menu-link">PROJECTS</Link>|
+            <Link to="/portfolio/articles" className="menu-link">ARTICLES</Link>
           </div>
           <div className="menu-icons">
             <div className="tooltip-container" onMouseEnter={() => setTooltip(true)} onMouseLeave={() => setTooltip(false)}>
