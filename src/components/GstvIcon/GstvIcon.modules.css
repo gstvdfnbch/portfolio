@@ -14,7 +14,6 @@
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  font-family: "Arial Black", Arial, sans-serif;
   border-radius: 50%;
   border: 5px solid white;
   text-transform: uppercase;
@@ -22,7 +21,6 @@
 
 .gstv-text {
   font-size: 1.2rem;
-  font-family: "Arial Black", Arial, sans-serif;
 }
 
 .black {
