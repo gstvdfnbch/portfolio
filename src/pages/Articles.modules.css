@@ -2,7 +2,16 @@ html, body {
     overflow: hidden;
 }
 
-.dev-page {
+.article-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100vw;
+    height: 80vh;
+}
+
+.article-page {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -11,7 +20,7 @@ html, body {
     height: 100vh;
 }
 
-.dev-icon-container {
+.article-icon-container {
     display: flex;
     flex-direction: column;
     justify-content: start;

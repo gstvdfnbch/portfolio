@@ -8,7 +8,7 @@ html, body {
     justify-content: start;
     align-items: start;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 }
 
 .content {
@@ -68,7 +68,7 @@ html, body {
         justify-content: start;
         align-items: start;
         width: 100vw;
-        height: 40vh;
+        height: 100%;
 
         background-image: url('../assets/estampa-rotate.png');
         background-size: cover;

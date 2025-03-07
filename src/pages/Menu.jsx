@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Menu.module.css";
 
@@ -6,7 +6,57 @@ const Menu = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const navigate = useNavigate();
   const [isExiting, setIsExiting] = useState(false);
-  const [tiltStyle, setTiltStyle] = useState({}); 
+  const [tiltStyle, setTiltStyle] = useState({});
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detecta se o dispositivo tem mouse (Desktop) ou não (Mobile)
+    const hasHover = window.matchMedia("(hover: hover)").matches;
+    setIsMobile(!hasHover);
+
+    if (!hasHover) {
+      // Se for um dispositivo móvel, ativa o acelerômetro
+      const handleMotion = (event) => {
+        const { beta, gamma } = event; // beta: inclinação frente/trás, gamma: esquerda/direita
+        const x = gamma / 5; // Sensibilidade do X
+        const y = beta / 10; // Sensibilidade do Y
+
+        setTiltStyle({
+          transform: `perspective(500px) rotateY(${-x}deg) rotateX(${y}deg)`,
+        });
+      };
+
+      if (window.DeviceMotionEvent) {
+        window.addEventListener("deviceorientation", handleMotion);
+      }
+
+      return () => {
+        if (window.DeviceMotionEvent) {
+          window.removeEventListener("deviceorientation", handleMotion);
+        }
+      };
+    }
+  }, []);
+
+  const handleMouseMove = (e) => {
+    if (isMobile) return; // Se for mobile, ignora o evento do mouse
+
+    const { clientX, clientY, currentTarget } = e;
+    const { width, height, left, top } = currentTarget.getBoundingClientRect();
+
+    const x = ((clientX - left) / width - 0.5) * 40;
+    const y = ((clientY - top) / height - 0.5) * 100;
+
+    setTiltStyle({
+      transform: `perspective(500px) rotateY(${-x}deg) rotateX(${y}deg)`,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    if (isMobile) return; // Evita resetar a rotação no mobile
+
+    setTiltStyle({ transform: "perspective(500px) rotateY(0deg) rotateX(0deg)" });
+  };
 
   const handleNavigation = (path) => {
     setIsExiting(true);
@@ -27,26 +77,9 @@ const Menu = () => {
     }
   };
 
-  const handleMouseMove = (e) => {
-    const { clientX, clientY, currentTarget } = e;
-    const { width, height, left, top } = currentTarget.getBoundingClientRect();
-  
-    const x = ((clientX - left) / width - 0.5) * 40; // Ajuste a sensibilidade do X
-    const y = ((clientY - top) / height - 0.5) * 100; // Ajuste a sensibilidade do Y e inverta (-)
-  
-    setTiltStyle({
-      transform: `perspective(500px) rotateY(${-x}deg) rotateX(${y}deg)`,
-    });
-  };
-
-  // Reseta a inclinação quando o mouse sai do menu
-  const handleMouseLeave = () => {
-    setTiltStyle({ transform: "perspective(500px) rotateY(0deg) rotateX(0deg)" });
-  };
-
   return (
     <div
-    className={`menu ${isExpanded ? "expanded" : ""} ${isExiting ? "exiting" : ""}`}
+      className={`menu ${isExpanded ? "expanded" : ""} ${isExiting ? "exiting" : ""}`}
       style={tiltStyle}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

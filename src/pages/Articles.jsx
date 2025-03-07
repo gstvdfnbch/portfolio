@@ -23,8 +23,8 @@ const Articles = () => {
   }, []);
 
   return (
-    <div className="dev-page">
-      <div className="dev-icon-container-articles">
+    <div className="article-page">
+      <div className="article-icon-container-articles">
         <MenuTopo showMenuRight={true} />
         <div className="box-content-articles">
           <div className="horizontal-scroll" ref={scrollContainerRef}>
