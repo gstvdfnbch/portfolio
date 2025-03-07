@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./MenuTopo.modules.css";
 import GstvIcon from "../GstvIcon/GstvIcon";
+import { useNavigate } from "react-router-dom";
 
 import emailIcon from "../../assets/iconcontacts/email-icon.png";
 import mediumIcon from "../../assets/iconcontacts/medium-icon.png";
@@ -12,6 +13,7 @@ import instaIcon from "../../assets/iconcontacts/insta-icon.png";
 const MenuTopo = ({ showMenuRight = true }) => {
   const [tooltip, setTooltip] = useState(false);
   const email = "gustavodiefenbach.dev@gmail.com";
+  const navigate = useNavigate(); // Hook para voltar à página anterior
 
   const copyEmailToClipboard = (e) => {
     e.preventDefault();
@@ -24,13 +26,18 @@ const MenuTopo = ({ showMenuRight = true }) => {
   return (
     <div className="menu-top">
       <div className="menu-left">
-        <GstvIcon />
+        <button className="back-button" onClick={() => navigate(-1)}>
+          &lt; {/* HTML entity para "<" */}
+        </button>
+        <Link to="/portfolio">
+          <GstvIcon />
+        </Link>
       </div>
       {showMenuRight ? (
         <div className="menu-right">
           <div className="menu-topicos">
-            <Link to="/portfolio/projects" className="menu-link">PROJECTS</Link>|
-            <Link to="/portfolio/articles" className="menu-link">ARTICLES</Link>
+            <Link to="/portfolio/projects" className="menu-link">PROJECTS    </Link>|
+            <Link to="/portfolio/articles" className="menu-link">    ARTICLES</Link>
           </div>
           <div className="menu-icons">
             <div className="tooltip-container" onMouseEnter={() => setTooltip(true)} onMouseLeave={() => setTooltip(false)}>
