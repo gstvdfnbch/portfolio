@@ -17,7 +17,7 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     /* background-color: red; */
 }
 
@@ -26,7 +26,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 80vw;
+    max-width: 70vw;
     max-height: 60vh;
     background-color: #333;
     box-sizing: border-box;
@@ -46,7 +46,7 @@ html, body {
 }
 
 .box-top-description-details {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@ html, body {
 }
 
 .box-top-description-details.vertical {
-    width:70%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ html, body {
 }
 
 .top-details {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -146,7 +146,7 @@ html, body {
 }
 
 .description-details {
-    width: 100%;
+    width: auto;
     height: auto;
     text-align: left;
     align-items: center;

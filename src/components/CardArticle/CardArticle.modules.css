@@ -15,6 +15,7 @@
 
 .link-a {
     color: white;
+    text-decoration: none;
 }
 
 .link-a:hover {
@@ -25,6 +26,7 @@
 .link-a:focus,
 .link-a:active {
     color: white;
+    text-decoration: none;
     outline: none;
 }
 
@@ -52,6 +54,7 @@
     white-space: normal;
     overflow-wrap: break-word; 
     text-decoration: none;
+    padding-bottom: 10px;
 }
 
 .descrip-article{
