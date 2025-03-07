@@ -2,7 +2,8 @@ import React from "react";
 import "../pages/Dev.modules.css";
 import "../App.css";
 import MenuTopo from "../components/MenuTopo/MenuTopo.jsx"; // Importando o novo componente
-import objImage from '../assets/3dobj.png';
+// import objImage from '../assets/3dobj.png';
+import objImage from '../assets/estampa.png';
 
 const Dev = () => {
   return (
