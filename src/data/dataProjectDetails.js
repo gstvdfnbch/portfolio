@@ -71,7 +71,7 @@ const projectsDetails = [
     title: "Encarte Rápido",
     texto1: "Encarte rápido",
     texto2: "Supermarket flyer generator.",
-    description: "Encarte Rápido is a cross-platform app for iOS and Android, built with Flutter, providing a complete solution for creating and customizing marketing flyers. It allows users to load products via API, automatically remove image backgrounds, and design custom themes using a Canvas Drag and Drop system. With flexible grid layouts, local data storage, and seamless API synchronization, the app ensures an efficient and intuitive experience, handling everything directly within the platform.",
+    description: "Encarte Rápido is a Flutter app for iOS and Android that simplifies flyer creation. It allows users to load products via API, remove backgrounds automatically, and design custom themes with a drag-and-drop system. Featuring flexible grids, local storage, and seamless API sync, it ensures an intuitive and efficient experience.",
     imageSrc: [encarte1, encarte2, encarte3, encarte4],
     icon: encarteIcon,
     video: "",
