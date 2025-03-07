@@ -37,25 +37,27 @@ const ProjectDetail = () => {
     sizeImages = "size-images-details vertical"
     top = "top-details vertical";
     description = "description-details vertical";
+    boxTopDescription = "box-top-description-details vertical";
   } else {
     background = "background-details";
     images = "images-details";
     sizeImages = "size-images-details"
     top = "top-details";
     description = "description-details";
+    boxTopDescription = "box-top-description-details";
   }
 
   if (project.imageSrc.length === 0) {
     images = "images-details hidden";
   }
 
-  if (project.imageSrc.length === 1) {
-    top = "top-details vertical";
-    description = "description-details vertical";
-    images = "images-details only";
-    sizeImages = "size-images-details only"
-    background = "background-details vertical";
-  }
+  // if (project.imageSrc.length === 1) {
+  //   top = "top-details vertical";
+  //   description = "description-details vertical";
+  //   images = "images-details only";
+  //   sizeImages = "size-images-details only"
+  //   background = "background-details vertical";
+  // }
 
   if (!project) {
     return <div>Projeto não encontrado.</div>

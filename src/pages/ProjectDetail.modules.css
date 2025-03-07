@@ -8,7 +8,7 @@ html, body {
     justify-content: start;
     align-items: center;
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .general-container-details {
@@ -18,6 +18,7 @@ html, body {
     align-items: center;
     width: 100vw;
     height: 90vh;
+    /* background-color: red; */
 }
 
 .background-details {
@@ -25,10 +26,13 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
-    border-radius: 1vw;
+    max-width: 80vw;
+    max-height: 60vh;
     background-color: #333;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 12px
 }
 
 .background-details.vertical {
@@ -36,11 +40,10 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    width: 60vw; /*Define a largura do bloco de informacoes*/
-    height: auto;
-    padding: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
 
 .box-top-description-details {
     width: 100%;
@@ -48,6 +51,17 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
+    /* background-color: greenyellow; */
+}
+
+.box-top-description-details.vertical {
+    width:70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: greenyellow; */
 }
 
 .top-details {
@@ -58,11 +72,13 @@ html, body {
     justify-content: start;
     align-items: center;
     gap: 10px;
-    padding: 15px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .top-details.vertical {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -81,8 +97,7 @@ html, body {
 
 .size-icon-details { 
     width: auto;
-    height: 20vh;
-    border-radius: 10px;
+    height: 16vh;
 }
 
 .box-title-details {
@@ -91,19 +106,21 @@ html, body {
     justify-content: start;
     align-items: start;
     text-align: left;
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
 .title-details {
     width: 100%;
     height: 6vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .subtitle-details {
     width: 100%;
-    height: 9vh;
+    height: 6vh;
+    font-size: 0.9rem;
+    font-family: "Arial";
 }
 
 .box-badgets-details {
@@ -111,71 +128,64 @@ html, body {
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    width: 100%;
-    height: 5vh;
+    width: auto;
+    height: 4vh;
 }
 
 .size-badget-details {
     width: auto;
     height: 100%;
-    border-radius: 5px;
     margin-right: 0.5vw;
 }
 
 .size-badget-details.hidden {
     width: 0px;
     height: 0px;
-    border-radius: 5px;
     margin-right: 0.5vw;
 }
 
 .description-details {
-    width: 60vw;
+    width: 100%;
     height: auto;
     text-align: left;
     align-items: center;
-    padding: 15px;
+    font-family: "Arial";
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .description-details.vertical {
     width: auto;
     height: auto;
+    font-family: "Arial";
     text-align: left;
     align-items: center;
+    padding-right: 0px;
 }
 
 .images-details {
-    width: 60vw;
-    height: 40vh;
+    width: 100%;
+    height: 50%;
     overflow-y: hidden;
     overflow-x: auto;
     display: flex;
     flex-direction: row;
     gap: 15px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge */
 }
-
-/* Remove o fundo da scrollbar */
+  
 .images-details::-webkit-scrollbar {
-    height: 8px; /* Define a altura da scrollbar */
-    background: transparent; /* Remove o fundo */
-}
-
-/* Transforma o indicador da scrollbar em um círculo */
-.images-details::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 50%;
-    width: 20px;
-    height: 8px;
-}
-
-/* Esconde a área de rolagem de fundo */
-.images-details::-webkit-scrollbar-track {
-    background: transparent;
+    display: none; /* Esconde a scrollbar no Chrome, Safari e Edge */
 }
 
 .images-details.vertical {
-    width: 20vw;
-    height: 60vh;
+    width: auto;
+    height: 100%;
     overflow-y: hidden;
     overflow-x: auto;
     display: flex;
@@ -198,14 +208,13 @@ html, body {
 
 .size-images-details {
     width: auto;
-    height: 37vh;
+    height: 100%;
     object-fit: contain;
-    border-radius: 10px;
 }
 
 .size-images-details.vertical {
     width: auto;
-    height: 57vh;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -219,13 +228,6 @@ html, body {
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     .general-container-details {
         display: flex;
@@ -233,20 +235,21 @@ html, body {
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 80vh;
-        margin-bottom: 15vh;
+        height: 100%;
+        box-sizing: border-box;
+        padding-bottom: 20vh;
     }
 
     .background-details {
         width: 85vw;
-        border-radius: 1vw;
+        height: auto;
         background-color: #333;
-        padding: 15px;
     }
     
     .background-details.vertical {
         width: 85vw;
         flex-direction: column;
+        padding: 0px;
     }
 
     .box-top-description-details {
@@ -254,11 +257,12 @@ html, body {
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: start;
+        align-items: start;
     }
 
     .top-details {
-        width: 100%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -270,6 +274,7 @@ html, body {
     .top-details.vertical {
         width: 100%;
         height: auto;
+        padding: 12px;
     }
 
     .box-icon-details {
@@ -280,10 +285,33 @@ html, body {
         aspect-ratio: 1 / 1;
     }
 
+    .box-top-description-details {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .box-top-description-details.vertical {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        padding: 0px;
+    }
+    
+
     .title-details {
         width: 100%;
         height: 4.5vh;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: left;
     }
     
@@ -291,6 +319,7 @@ html, body {
         height: 5vh;
         font-size: 0.8rem;
         text-align: left;
+        line-height: 1.0;
     }
 
     .box-badgets-details {
@@ -305,49 +334,44 @@ html, body {
     .size-badget-details {
         width: auto;
         height: 3.5vh;
-        border-radius: 5px;
         margin-right: 5px;
     }
 
 
     .description-details {
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         padding: 0px;
-        padding-top: 15px;
-        padding-bottom: 15px;
     }
     
     .description-details.vertical {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
         width: 100%;
         height: auto;
-        padding: 0px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
+        font-family: "Arial";
+        text-align: left;
+        align-items: center;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .images-details {
-        width: 85vw;
-        height: 20vh;
+        width: 100%;
+        height: auto;
         overflow-y: hidden;
         overflow-x: auto;
         display: flex;
         flex-direction: row;
-        gap: 10px;
     }
 
     .images-details.vertical {
-        width: 85vw;
+        width: 100%;
         height: 20vh;
         overflow-y: hidden;
         overflow-x: auto;
         display: flex;
         flex-direction: row;
+        padding-bottom: 12px;
+        gap: 8px;
     }
     
     .images-details.hidden {
@@ -368,7 +392,6 @@ html, body {
         width: auto;
         height: 12vh;
         object-fit: contain;
-        border-radius: 5px;
         justify-content: center;
         align-items: center;
     }
@@ -390,6 +413,5 @@ html, body {
     .size-icon-details { 
         width: auto;
         height: 13vh;
-        border-radius: 10px;
     }
 }

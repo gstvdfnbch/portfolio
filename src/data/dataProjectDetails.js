@@ -119,7 +119,7 @@ const projectsDetails = [
     video: fliptyVideo,
     badges: [appleBadge],
     links: ["https://apple.co/4gFeVes"],
-    isVertical: false
+    isVertical: true
   },
   {
     id: 5,
