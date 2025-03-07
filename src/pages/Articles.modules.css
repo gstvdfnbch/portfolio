@@ -36,22 +36,16 @@ html, body {
     overflow-x: auto;
     width: 100vw;
     height: auto;
-}
-
-
-.horizontal-scroll::-webkit-scrollbar {
-    height: 8px;
-    background: transparent;
+    gap: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
   }
   
-  .horizontal-scroll::-webkit-scrollbar-track {
-    background: transparent;
+  .horizontal-scroll-products::-webkit-scrollbar {
+    display: none;
   }
+
   
-  .horizontal-scroll::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 50%;
-  }
 
 @media (max-width: 768px) {
     .box-content-articles {
@@ -59,11 +53,7 @@ html, body {
         align-items: center;
         overflow-x: auto;
         width: 100vw;
-        height: 60vh;
-    }
-
-    .horizontal-scroll {
-        height: auto;
+        height: 50vh;
     }
   
 }

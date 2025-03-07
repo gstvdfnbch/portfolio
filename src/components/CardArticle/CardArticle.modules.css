@@ -3,71 +3,66 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    width: 30vw;
+    width: auto;
     height: 60vh;
-    padding: 10px;
-}
-
-.card.zero {
-    width: 0vw;
-    height: 1vh;
-    margin: 0px;
-    background: transparent;
-}
-
-.cover {
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-.image-article {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 15px;
-}
-
-.box-content {
-    height: 100%;
-    border-radius: 15px;
     background-color: #333;
 }
 
-.box-content.zero {
-    height: 0px;    
+.card.transparent {
+    width: 60px;
     background-color: transparent;
+}
+
+.link-a {
+    color: white;
+}
+
+.link-a:hover {
+    color: white; 
+    text-decoration: none;
+}
+
+.link-a:focus,
+.link-a:active {
+    color: white;
+    outline: none;
+}
+
+.cover {
+    height: 70%;
+}
+
+.image-article {
+    width: auto;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.box-content {
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .title-article {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word; 
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
 }
 
 .descrip-article{
+    font-family: "Arial";
     text-align: left;    
     font-size: 0.8rem;
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word; 
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     .card {
@@ -75,60 +70,31 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        width: 70vw;
-        height: auto;
-        padding: 10px;
+        width: auto;
+        height: 40vh;
     }
 
-    .card.zero {
-        width: 5vw;
-        height: 0vh;
-        margin: 0px;
-        background: transparent;
+    .card.transparent {
+        width: 12px;
+        background-color: transparent;
     }
 
     .cover {
-        width: 100%;
-        height: auto;
-        padding-bottom: 0px;
+        height: 60%;
     }
-    
+
     .box-content {
-        width: auto;
-        height: 30vh;
-        border-radius: 10px;
-        background-color: #333;
+        width: 100%;
+        height: 40%;
+        box-sizing: border-box;
+        padding: 10px;
     }
-    
-    .box-content.zero {
-        height: 0px;    
-        background-color: transparent;
-    }
-    
+
     .title-article {
-        width: 80%;
-        height: auto;
-        text-align: left;
-        font-size: 1.0rem;
-        word-wrap: break-word;
-        white-space: normal;
-        overflow-wrap: break-word; 
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        font-size: 0.8rem;
     }
     
     .descrip-article{
-        width: 80%;
-        height: auto;
-        text-align: left;
-        font-size: 0.8rem;
-        word-wrap: break-word;
-        white-space: normal;
-        overflow-wrap: break-word; 
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
+        font-size: 0.5rem;
     }
 }

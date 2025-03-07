@@ -8,6 +8,13 @@ import mediumMultiTouch from "../assets/coverMediuns/medium-multitouch.png";
 
 const dataArticle = [
   {
+    id: 0,
+    title: "",
+    text: "",
+    link: "",
+    imageSrc: mediumBlack
+  },
+  {
     id: 1,
     title: "Creative Pixel Art Customization with Textures",
     text: "The goal here is to create a texture storage model in a .png file, to be used for customizing animations in an automated way, simply by updating the texture file, and use it in Swift Project.",

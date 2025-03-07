@@ -2,28 +2,26 @@ import React from "react";
 import "./CardArticle.modules.css";
 
 const CardArticle = ({ titulo, text, imageSrc, link }) => {
-  const card = titulo === "" ? "card zero" : "card";
-  const boxTitle = titulo === "" ? "box-content zero" : "box-content";
+  const card = titulo === "" ? "card transparent" : "card";
 
-  console.log(titulo,text,imageSrc,link)
 
   return (
-        <div>
-          <div className={card}>
-          <a href={link} target="_blank" rel="noopener noreferrer" className="image-link">
+    <div>
+      <a href={link} target="_blank" rel="noopener noreferrer" className="link-a">
+        <div className={card}>
 
           <div className="cover">
-              <img src={imageSrc} alt="Imagem do projeto" className="image-article" />
-          </div>
-          </a>
-
-          <div className={boxTitle}>
-              <div className="title-article">{titulo}</div>
-              <div className="descrip-article">{text}</div>
+            <img src={imageSrc} alt="Imagem do projeto" className="image-article" />
           </div>
 
+
+          <div className="box-content">
+            <div className="title-article">{titulo}</div>
+            <div className="descrip-article">{text}</div>
           </div>
         </div>
+      </a>
+    </div>
   );
 };
 
