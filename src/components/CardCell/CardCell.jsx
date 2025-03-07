@@ -2,16 +2,15 @@ import React from "react";
 import "./CardCell.modules.css"; // Importa os estilos
 
 const CardCell = ({ texto1, texto2, imageSrc, iconSrc, onClick }) => {
-  const textContainerClass = texto1 === "" ? "card-footer transparent" : "card-footer";
-  const cardTitleClass = texto1 === "" ? "card-title small" : "card-title";
+  const contentCard = texto1 === "" ? "content-card transparent" : "content-card";
 
   return (
-    <div className="project-card" onClick={onClick} >
-      <div className={cardTitleClass}>
-        <img src={imageSrc} alt="Imagem do projeto" className="card-image" />
+    <div className={contentCard} onClick={onClick} >
+      <div className="poster">
+        <img src={imageSrc} alt="Imagem do projeto" className="poster-image" />
       </div>
-      
-      <div className={textContainerClass}>
+     
+      <div className="footer">
         <div className="square-icon">
           <img src={iconSrc} alt="Ícone" className="icon-image" />
         </div>

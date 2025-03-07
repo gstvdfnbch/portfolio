@@ -24,7 +24,7 @@ const Projects = () => {
   }, []);
 
   const handleCardClick = (id) => {
-    if ((id != 0) && (id != projectsData.length)) {
+    if ((id != 0) && (id <= projectsData.length - 2)) {
       navigate(`/portfolio/project/${id}`);
     }
   };
