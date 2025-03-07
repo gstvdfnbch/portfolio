@@ -55,8 +55,7 @@
 }
 
 .menu-topicos {
-    /* padding-bottom: ; */
-    /* background-color: #00ff00; */
+
 }
 
 .menu-link {
@@ -64,7 +63,8 @@
     color: white;
     font-size: 1.2rem;
     transition: color 0.3s;
-    /* padding: 10px; */
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .menu-link:hover {
