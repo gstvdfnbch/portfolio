@@ -48,8 +48,6 @@ import tardigrade2 from "../assets/imagesDetailsProjects/tardigrade-2.png";
 import tardigrade3 from "../assets/imagesDetailsProjects/tardigrade-3.png";
 
 import animal1 from "../assets/imagesDetailsProjects/animal-1.png";
-import animal2 from "../assets/imagesDetailsProjects/animal-2.png";
-import animal3 from "../assets/imagesDetailsProjects/animal-3.png";
 
 // Importação de vídeos
 import burguerVideo from "../assets/videos/burguermaker.mov";
@@ -119,7 +117,7 @@ const projectsDetails = [
     video: fliptyVideo,
     badges: [appleBadge],
     links: ["https://apple.co/4gFeVes"],
-    isVertical: false
+    isVertical: true
   },
   {
     id: 5,
@@ -192,12 +190,12 @@ const projectsDetails = [
     texto1: "Keyboard Animal",
     texto2: "Keyboard to recognize animal songs.",
     description: "Keyboard Animal was my first app developed for the Swift Student Challenge, inspired by a childhood toy. Created entirely on my own, the app was designed to help children learn to recognize animal sounds in a fun and interactive way. Developed using SwiftUI and built within Swift Playgrounds, it provides an engaging experience that combines education and entertainment, making learning more intuitive for young users.",
-    imageSrc: [animal1, animal2, animal3],
+    imageSrc: [animal1],
     icon: animalIcon,
     video: animalVideo,
     badges: [appleBadge],
     links: ["https://apple.co/4dm2pxw"],
-    isVertical: false
+    isVertical: true
   }
 ];
 

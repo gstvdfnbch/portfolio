@@ -6,6 +6,8 @@ import Menu from "./pages/Menu"
 import Projects from "./pages/Projects";
 import Articles from "./pages/Articles";
 import ProjectDetail from "./pages/ProjectDetail";
+import NotFound from "./pages/NotFound"; // Importa a página 404
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/articles" element={<Articles />} />
         <Route path="/portfolio/project/:id" element={<ProjectDetail />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       </>
     </Router>

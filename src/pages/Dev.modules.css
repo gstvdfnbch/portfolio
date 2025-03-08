@@ -109,12 +109,12 @@ html, body {
 
     .blue p:first-child {
         margin-bottom: 5px;
-        font-size: 0.8rem;
+        font-size: 1.0rem;
         text-align: left;
     }
     
     .blue p:last-child {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: left;
     }
 

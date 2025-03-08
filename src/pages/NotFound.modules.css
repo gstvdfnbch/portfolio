@@ -1,0 +1,17 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.0rem;
+    margin: 10px 0;
+    opacity: 0.8;
+}

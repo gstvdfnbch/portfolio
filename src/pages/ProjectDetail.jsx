@@ -27,37 +27,10 @@ const ProjectDetail = () => {
   boxTopDescription = "box-top-description-details";
   boxBadgets = "box-badgets-details";
 
-  if (project.badges.length === 0) {
-    boxBadgets = "box-badgets-details hidden"
+  if (!project.isVertical) {
+    images = "images-details horizontal";
+    sizeImages = "size-images-details horizontal";
   }
-  
-  if (project.isVertical) {
-    background = "background-details vertical";
-    images = "images-details vertical";
-    sizeImages = "size-images-details vertical"
-    top = "top-details vertical";
-    description = "description-details vertical";
-    boxTopDescription = "box-top-description-details vertical";
-  } else {
-    background = "background-details";
-    images = "images-details";
-    sizeImages = "size-images-details"
-    top = "top-details";
-    description = "description-details";
-    boxTopDescription = "box-top-description-details";
-  }
-
-  if (project.imageSrc.length === 0) {
-    images = "images-details hidden";
-  }
-
-  // if (project.imageSrc.length === 1) {
-  //   top = "top-details vertical";
-  //   description = "description-details vertical";
-  //   images = "images-details only";
-  //   sizeImages = "size-images-details only"
-  //   background = "background-details vertical";
-  // }
 
   if (!project) {
     return <div>Projeto não encontrado.</div>
@@ -83,9 +56,9 @@ const ProjectDetail = () => {
         <MenuTopo showMenuRight={true} />
         <div className="general-container-details">
           
-          <div className={background}>
+          <div className={background} ref={scrollContainerRef}>
 
-            <div className={boxTopDescription}>
+            <div className={boxTopDescription} >
               <div className={top}>
                 <div className={boxIcon}>
                   <img key={project.id} src={project.icon} alt={`Imagem ${project.id}`} className="size-icon-details" />
@@ -120,7 +93,7 @@ const ProjectDetail = () => {
               </div>
             </div>
             
-            <div className={images} ref={scrollContainerRef}>
+            <div className={images}>
               {
                   project.imageSrc.map((img, index) => (
                     <img key={index} src={img} alt={`Imagem ${index}`} className={sizeImages} />
