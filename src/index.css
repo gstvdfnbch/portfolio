@@ -1,6 +1,13 @@
+@font-face {
+  font-family: "Arial Black";
+  src: url("../assets/fonts/ArialBlackGstv.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 :root {
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: "Arial-Black", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Arial Black", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color-scheme: only dark;
   color: rgba(255, 255, 255, 0.87);
@@ -12,4 +19,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Arial Black", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
