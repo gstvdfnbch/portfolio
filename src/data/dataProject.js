@@ -31,6 +31,12 @@ import tardigradeIcon from "../assets/icons/tardigrado.png";
 import animalCover from "../assets/covers/animal-cover.png";
 import animalIcon from "../assets/icons/animal.png";
 
+import boolearnCover from "../assets/covers/boolearn-cover.png";
+import boolearnIcon from "../assets/icons/boolearn.png";
+
+import notesCover from "../assets/covers/notes-cover.png";
+import notesIcon from "../assets/icons/notes.png";
+
 const projectsData = [
   {
     id: 0,
@@ -50,6 +56,14 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Boolearn",
+    texto1: "Boolearn",
+    texto2: "Learn digital electronics",
+    imageSrc: boolearnCover,
+    icon: boolearnIcon
+  },
+  {
+    id: 3,
     title: "Trendy",
     texto1: "Trendy",
     texto2: "Personal media to live new experiences.",
@@ -57,7 +71,7 @@ const projectsData = [
     icon: trendyIcon
   },
   {
-    id: 3,
+    id: 4,
     title: "Burger Maker",
     texto1: "Burger Maker",
     texto2: "Build your burger and compete.",
@@ -65,7 +79,7 @@ const projectsData = [
     icon: burguerIcon
   },
   {
-    id: 4,
+    id: 5,
     title: "Flipty",
     texto1: "Flipty",
     texto2: "A coin or a dice, right from your wrist.",
@@ -73,7 +87,15 @@ const projectsData = [
     icon: fliptyIcon
   },
   {
-    id: 5,
+    id: 6,
+    title: "NOTES by gstv",
+    texto1: "NOTES by gstv",
+    texto2: "Different way for organization",
+    imageSrc: notesCover,
+    icon: notesIcon
+  },
+  {
+    id: 7,
     title: "Morfie",
     texto1: "Morfie",
     texto2: "Mood tracker and playlist maker.",
@@ -81,7 +103,7 @@ const projectsData = [
     icon: morfieIcon
   },
   {
-    id: 6,
+    id: 8,
     title: "Tans",
     texto1: "Tans",
     texto2: "Mini-games to practice logic.",
@@ -89,7 +111,7 @@ const projectsData = [
     icon: tansIcon
   },
   {
-    id: 7,
+    id: 9,
     title: "Byte Verse",
     texto1: "Byte Verse",
     texto2: "Gyroscope-based game like Space Invaders.",
@@ -97,7 +119,7 @@ const projectsData = [
     icon: byteIcon
   },
   {
-    id: 8,
+    id: 10,
     title: "Word Mystery",
     texto1: "Word Mystery",
     texto2: "Hangman game using Apple Watch and iPhone.",
@@ -105,7 +127,7 @@ const projectsData = [
     icon: wordIcon
   },
   {
-    id: 9,
+    id: 11,
     title: "Tardigrade",
     texto1: "Tardigrade",
     texto2: "Save the world in a 2D game.",
@@ -113,7 +135,7 @@ const projectsData = [
     icon: tardigradeIcon
   },
   {
-    id: 10,
+    id: 12,
     title: "Keyboard Animal",
     texto1: "Keyboard Animal",
     texto2: "Keyboard to recognize animal songs.",
@@ -121,7 +143,7 @@ const projectsData = [
     icon: animalIcon
   },
   {
-    id: 11,
+    id: 13,
     title: "",
     texto1: "",
     texto2: "",

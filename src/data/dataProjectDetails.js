@@ -1,8 +1,10 @@
 // Importação de ícones
 import encarteIcon from "../assets/icons/encarte.png";
 import trendyIcon from "../assets/icons/trendy.png";
+import boolearnIcon from "../assets/icons/boolearn.png";
 import burguerIcon from "../assets/icons/burguer.png";
 import fliptyIcon from "../assets/icons/flipty.png";
+import notesIcon from "../assets/icons/notes.png";
 import morfieIcon from "../assets/icons/morfie.png";
 import tansIcon from "../assets/icons/tans.png";
 import byteIcon from "../assets/icons/byte.png";
@@ -31,6 +33,10 @@ import morfie1 from "../assets/imagesDetailsProjects/morfie-1.jpg";
 import morfie2 from "../assets/imagesDetailsProjects/morfie-2.jpg";
 import morfie3 from "../assets/imagesDetailsProjects/morfie-3.jpg";
 
+import notes1 from "../assets/imagesDetailsProjects/notes-1.png";
+import notes2 from "../assets/imagesDetailsProjects/notes-2.png";
+import notes3 from "../assets/imagesDetailsProjects/notes-3.png";
+
 import tans1 from "../assets/imagesDetailsProjects/tans-1.png";
 import tans2 from "../assets/imagesDetailsProjects/tans-2.png";
 import tans3 from "../assets/imagesDetailsProjects/tans-3.png";
@@ -48,6 +54,11 @@ import tardigrade2 from "../assets/imagesDetailsProjects/tardigrade-2.png";
 import tardigrade3 from "../assets/imagesDetailsProjects/tardigrade-3.png";
 
 import animal1 from "../assets/imagesDetailsProjects/animal-1.png";
+
+import boolearn1 from "../assets/imagesDetailsProjects/boolearn-1.png";
+import boolearn2 from "../assets/imagesDetailsProjects/boolearn-2.png";
+import boolearn3 from "../assets/imagesDetailsProjects/boolearn-3.png";
+import boolearn4 from "../assets/imagesDetailsProjects/boolearn-4.png";
 
 // Importação de vídeos
 import burguerVideo from "../assets/videos/burguermaker.mov";
@@ -82,6 +93,19 @@ const projectsDetails = [
   },
   {
     id: 2,
+    title: "Boolearn",
+    texto1: "Boolearn",
+    texto2: "Learn digital electronics",
+    description: "Boolearn is an educational app built entirely in SwiftUI, designed to make learning digital logic engaging and accessible. I used the Coordinator pattern to handle navigation, and I created all the design and illustrations myself. The app currently features three lessons: binary and decimal numbers, bits, nibbles and bytes, and logic gates. Boolearn was selected as a winner of the Swift Student Challenge.",
+    imageSrc: [boolearn1, boolearn2, boolearn3, boolearn4],
+    icon: boolearnIcon,
+    video: "",
+    badges: [appleBadge],
+    links: ["https://apple.co/4cAoN7B"],
+    isVertical: false
+  },
+  {
+    id: 3,
     title: "Trendy",
     texto1: "Trendy",
     texto2: "Personal media to live new experiences.",
@@ -94,7 +118,7 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 3,
+    id: 4,
     title: "Burger Maker",
     texto1: "Burger Maker",
     texto2: "Build your burger and compete.",
@@ -107,7 +131,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 4,
+    id: 5,
     title: "Flipty",
     texto1: "Flipty",
     texto2: "A coin or a dice, right from your wrist.",
@@ -120,7 +144,20 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 5,
+    id: 6,
+    title: "NOTES by gstv",
+    texto1: "NOTES by gstv",
+    texto2: "Different way for organizaotion",
+    description: "NOTES by gstv is an app I created to explore my own vision of how organization should work. The first version includes three core features: note-taking, scheduling, and personal finance tracking. I built the entire app using SwiftUI and MVVM, applying a file-based persistence system to store data locally. I also implemented design patterns such as Design System and Singleton, and wrote tests to ensure all business rules behaved as expected. The interface is clean, smooth, and intuitive—focused on functionality without unnecessary clutter.",
+    imageSrc: [notes1, notes2, notes3],
+    icon: notesIcon,
+    video: "",
+    badges: [appleBadge],
+    links: ["https://apple.co/4lWgurb"],
+    isVertical: true
+  },
+  {
+    id: 7,
     title: "Morfie",
     texto1: "Morfie",
     texto2: "Mood tracker and playlist maker.",
@@ -133,7 +170,7 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 6,
+    id: 8,
     title: "Tans",
     texto1: "Tans",
     texto2: "Mini-games to practice logic.",
@@ -146,7 +183,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 7,
+    id: 9,
     title: "Byte Verse",
     texto1: "Byte Verse",
     texto2: "Gyroscope-based game like Space Invaders.",
@@ -159,7 +196,7 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 8,
+    id: 10,
     title: "Word Mystery",
     texto1: "Word Mystery",
     texto2: "Hangman game using Apple Watch and iPhone.",
@@ -172,7 +209,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 9,
+    id: 11,
     title: "Tardigrade",
     texto1: "Tardigrade",
     texto2: "Save the world in a 2D game.",
@@ -185,7 +222,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 10,
+    id: 12,
     title: "Keyboard Animal",
     texto1: "Keyboard Animal",
     texto2: "Keyboard to recognize animal songs.",
