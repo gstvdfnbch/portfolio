@@ -1,6 +1,7 @@
 // Importação de ícones
 import encarteIcon from "../assets/icons/encarte.png";
 import trendyIcon from "../assets/icons/trendy.png";
+import boolearnIcon from "../assets/icons/boolearn.png";
 import burguerIcon from "../assets/icons/burguer.png";
 import fliptyIcon from "../assets/icons/flipty.png";
 import morfieIcon from "../assets/icons/morfie.png";
@@ -49,6 +50,16 @@ import tardigrade3 from "../assets/imagesDetailsProjects/tardigrade-3.png";
 
 import animal1 from "../assets/imagesDetailsProjects/animal-1.png";
 
+import boolearn1 from "../assets/imagesDetailsProjects/boolearn-1.jpg";
+import boolearn2 from "../assets/imagesDetailsProjects/boolearn-2.jpg";
+import boolearn3 from "../assets/imagesDetailsProjects/boolearn-3.jpg";
+import boolearn4 from "../assets/imagesDetailsProjects/boolearn-4.jpg";
+import boolearn5 from "../assets/imagesDetailsProjects/boolearn-5.jpg";
+import boolearn6 from "../assets/imagesDetailsProjects/boolearn-6.jpg";
+import boolearn7 from "../assets/imagesDetailsProjects/boolearn-7.jpg";
+import boolearn8 from "../assets/imagesDetailsProjects/boolearn-8.jpg";
+import boolearn9 from "../assets/imagesDetailsProjects/boolearn-9.jpg";
+
 // Importação de vídeos
 import burguerVideo from "../assets/videos/burguermaker.mov";
 import fliptyVideo from "../assets/videos/tans.mp4";
@@ -82,6 +93,19 @@ const projectsDetails = [
   },
   {
     id: 2,
+    title: "Boolearn",
+    texto1: "Boolearn",
+    texto2: "Learn digital electronics",
+    description: "Boolearn is an educational app built entirely in SwiftUI, designed to make learning digital logic engaging and accessible. I used the Coordinator pattern to handle navigation, and I created all the design and illustrations myself. The app currently features three lessons: binary and decimal numbers, bits, nibbles and bytes, and logic gates. Boolearn was selected as a winner of the Swift Student Challenge.",
+    imageSrc: [boolearn2, boolearn3, boolearn4, boolearn6, boolearn7, boolearn8, boolearn9],
+    icon: boolearnIcon,
+    video: "",
+    badges: [appleBadge],
+    links: ["https://apple.co/4cAoN7B"],
+    isVertical: false
+  },
+  {
+    id: 3,
     title: "Trendy",
     texto1: "Trendy",
     texto2: "Personal media to live new experiences.",
@@ -94,7 +118,7 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 3,
+    id: 4,
     title: "Burger Maker",
     texto1: "Burger Maker",
     texto2: "Build your burger and compete.",
@@ -107,7 +131,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 4,
+    id: 5,
     title: "Flipty",
     texto1: "Flipty",
     texto2: "A coin or a dice, right from your wrist.",
@@ -120,7 +144,20 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 5,
+    id: 6,
+    title: "NOTES by gstv",
+    texto1: "NOTES by gstv",
+    texto2: "Different way for organizaotion",
+    description: "",
+    imageSrc: [],
+    icon: fliptyIcon,
+    video: fliptyVideo,
+    badges: [appleBadge],
+    links: ["https://apple.co/4gFeVes"],
+    isVertical: true
+  },
+  {
+    id: 7,
     title: "Morfie",
     texto1: "Morfie",
     texto2: "Mood tracker and playlist maker.",
@@ -133,7 +170,7 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 6,
+    id: 8,
     title: "Tans",
     texto1: "Tans",
     texto2: "Mini-games to practice logic.",
@@ -146,7 +183,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 7,
+    id: 9,
     title: "Byte Verse",
     texto1: "Byte Verse",
     texto2: "Gyroscope-based game like Space Invaders.",
@@ -159,7 +196,7 @@ const projectsDetails = [
     isVertical: true
   },
   {
-    id: 8,
+    id: 10,
     title: "Word Mystery",
     texto1: "Word Mystery",
     texto2: "Hangman game using Apple Watch and iPhone.",
@@ -172,7 +209,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 9,
+    id: 11,
     title: "Tardigrade",
     texto1: "Tardigrade",
     texto2: "Save the world in a 2D game.",
@@ -185,7 +222,7 @@ const projectsDetails = [
     isVertical: false
   },
   {
-    id: 10,
+    id: 12,
     title: "Keyboard Animal",
     texto1: "Keyboard Animal",
     texto2: "Keyboard to recognize animal songs.",
