@@ -4,6 +4,7 @@ import trendyIcon from "../assets/icons/trendy.png";
 import boolearnIcon from "../assets/icons/boolearn.png";
 import burguerIcon from "../assets/icons/burguer.png";
 import fliptyIcon from "../assets/icons/flipty.png";
+import notesIcon from "../assets/icons/notes.png";
 import morfieIcon from "../assets/icons/morfie.png";
 import tansIcon from "../assets/icons/tans.png";
 import byteIcon from "../assets/icons/byte.png";
@@ -32,6 +33,10 @@ import morfie1 from "../assets/imagesDetailsProjects/morfie-1.jpg";
 import morfie2 from "../assets/imagesDetailsProjects/morfie-2.jpg";
 import morfie3 from "../assets/imagesDetailsProjects/morfie-3.jpg";
 
+import notes1 from "../assets/imagesDetailsProjects/notes-1.png";
+import notes2 from "../assets/imagesDetailsProjects/notes-2.png";
+import notes3 from "../assets/imagesDetailsProjects/notes-3.png";
+
 import tans1 from "../assets/imagesDetailsProjects/tans-1.png";
 import tans2 from "../assets/imagesDetailsProjects/tans-2.png";
 import tans3 from "../assets/imagesDetailsProjects/tans-3.png";
@@ -50,15 +55,10 @@ import tardigrade3 from "../assets/imagesDetailsProjects/tardigrade-3.png";
 
 import animal1 from "../assets/imagesDetailsProjects/animal-1.png";
 
-import boolearn1 from "../assets/imagesDetailsProjects/boolearn-1.jpg";
-import boolearn2 from "../assets/imagesDetailsProjects/boolearn-2.jpg";
-import boolearn3 from "../assets/imagesDetailsProjects/boolearn-3.jpg";
-import boolearn4 from "../assets/imagesDetailsProjects/boolearn-4.jpg";
-import boolearn5 from "../assets/imagesDetailsProjects/boolearn-5.jpg";
-import boolearn6 from "../assets/imagesDetailsProjects/boolearn-6.jpg";
-import boolearn7 from "../assets/imagesDetailsProjects/boolearn-7.jpg";
-import boolearn8 from "../assets/imagesDetailsProjects/boolearn-8.jpg";
-import boolearn9 from "../assets/imagesDetailsProjects/boolearn-9.jpg";
+import boolearn1 from "../assets/imagesDetailsProjects/boolearn-1.png";
+import boolearn2 from "../assets/imagesDetailsProjects/boolearn-2.png";
+import boolearn3 from "../assets/imagesDetailsProjects/boolearn-3.png";
+import boolearn4 from "../assets/imagesDetailsProjects/boolearn-4.png";
 
 // Importação de vídeos
 import burguerVideo from "../assets/videos/burguermaker.mov";
@@ -97,7 +97,7 @@ const projectsDetails = [
     texto1: "Boolearn",
     texto2: "Learn digital electronics",
     description: "Boolearn is an educational app built entirely in SwiftUI, designed to make learning digital logic engaging and accessible. I used the Coordinator pattern to handle navigation, and I created all the design and illustrations myself. The app currently features three lessons: binary and decimal numbers, bits, nibbles and bytes, and logic gates. Boolearn was selected as a winner of the Swift Student Challenge.",
-    imageSrc: [boolearn2, boolearn3, boolearn4, boolearn6, boolearn7, boolearn8, boolearn9],
+    imageSrc: [boolearn1, boolearn2, boolearn3, boolearn4],
     icon: boolearnIcon,
     video: "",
     badges: [appleBadge],
@@ -148,12 +148,12 @@ const projectsDetails = [
     title: "NOTES by gstv",
     texto1: "NOTES by gstv",
     texto2: "Different way for organizaotion",
-    description: "",
-    imageSrc: [],
-    icon: fliptyIcon,
-    video: fliptyVideo,
+    description: "NOTES by gstv is an app I created to explore my own vision of how organization should work. The first version includes three core features: note-taking, scheduling, and personal finance tracking. I built the entire app using SwiftUI and MVVM, applying a file-based persistence system to store data locally. I also implemented design patterns such as Design System and Singleton, and wrote tests to ensure all business rules behaved as expected. The interface is clean, smooth, and intuitive—focused on functionality without unnecessary clutter.",
+    imageSrc: [notes1, notes2, notes3],
+    icon: notesIcon,
+    video: "",
     badges: [appleBadge],
-    links: ["https://apple.co/4gFeVes"],
+    links: ["https://apple.co/4lWgurb"],
     isVertical: true
   },
   {
